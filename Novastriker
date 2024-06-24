@@ -3,6 +3,7 @@
 
 -- Instances:
 
+local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local DropShadowHolder = Instance.new("Frame")
 local DropShadow = Instance.new("ImageLabel")
@@ -64,8 +65,10 @@ local UIToolsGradient_6 = Instance.new("UIGradient")
 
 --Properties:
 
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
 Main.Name = "Main"
-Main.Parent = game.StarterGui.ScreenGui
+Main.Parent = ScreenGui
 Main.AnchorPoint = Vector2.new(0.5, 0.5)
 Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -487,7 +490,7 @@ UIToolsGradient_6.Parent = Main
 
 -- Scripts:
 
-local function KZBFDWI_fake_script() -- Main.DragScript 
+local function LQJAM_fake_script() -- Main.DragScript 
 	local script = Instance.new('LocalScript', Main)
 
 	
@@ -527,4 +530,4 @@ local function KZBFDWI_fake_script() -- Main.DragScript
 	end)
 	
 end
-coroutine.wrap(KZBFDWI_fake_script)()
+coroutine.wrap(LQJAM_fake_script)()
