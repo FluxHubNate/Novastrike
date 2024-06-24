@@ -1,0 +1,530 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Main = Instance.new("Frame")
+local DropShadowHolder = Instance.new("Frame")
+local DropShadow = Instance.new("ImageLabel")
+local TopBar = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local UIToolsGradient = Instance.new("UIGradient")
+local Title = Instance.new("TextLabel")
+local UIPadding = Instance.new("UIPadding")
+local Line = Instance.new("Frame")
+local UIToolsGradient_2 = Instance.new("UIGradient")
+local ExtBtn = Instance.new("ImageLabel")
+local UICorner_2 = Instance.new("UICorner")
+local Navigation = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Hide = Instance.new("Frame")
+local UIToolsGradient_3 = Instance.new("UIGradient")
+local Hide2 = Instance.new("Frame")
+local UIToolsGradient_4 = Instance.new("UIGradient")
+local ButtonHolder = Instance.new("Frame")
+local UIPadding_2 = Instance.new("UIPadding")
+local UIListLayout = Instance.new("UIListLayout")
+local Active = Instance.new("TextLabel")
+local UIPadding_3 = Instance.new("UIPadding")
+local Icon = Instance.new("ImageLabel")
+local Inactive = Instance.new("TextLabel")
+local UIPadding_4 = Instance.new("UIPadding")
+local Icon_2 = Instance.new("ImageLabel")
+local Line_2 = Instance.new("Frame")
+local UIToolsGradient_5 = Instance.new("UIGradient")
+local ContentContainer = Instance.new("Frame")
+local HomeTab = Instance.new("ScrollingFrame")
+local Button = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local UIPadding_5 = Instance.new("UIPadding")
+local Title_2 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local UIPadding_6 = Instance.new("UIPadding")
+local Label = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local UIPadding_7 = Instance.new("UIPadding")
+local Title_3 = Instance.new("TextLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local Slider = Instance.new("Frame")
+local UIPadding_8 = Instance.new("UIPadding")
+local Title_4 = Instance.new("TextLabel")
+local value = Instance.new("TextLabel")
+local SliderBack = Instance.new("Frame")
+local Draggable = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
+local Dropdown = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local UIPadding_9 = Instance.new("UIPadding")
+local Title_5 = Instance.new("TextLabel")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local UIToolsGradient_6 = Instance.new("UIGradient")
+
+--Properties:
+
+Main.Name = "Main"
+Main.Parent = game.StarterGui.ScreenGui
+Main.AnchorPoint = Vector2.new(0.5, 0.5)
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.505078137, 0, 0.5, 0)
+Main.Size = UDim2.new(0, 413, 0, 300)
+
+DropShadowHolder.Name = "DropShadowHolder"
+DropShadowHolder.Parent = Main
+DropShadowHolder.BackgroundTransparency = 1.000
+DropShadowHolder.BorderSizePixel = 0
+DropShadowHolder.Size = UDim2.new(1, 0, 1, 0)
+DropShadowHolder.ZIndex = 0
+
+DropShadow.Name = "DropShadow"
+DropShadow.Parent = DropShadowHolder
+DropShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+DropShadow.BackgroundTransparency = 1.000
+DropShadow.BorderSizePixel = 0
+DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
+DropShadow.Size = UDim2.new(1, 47, 1, 47)
+DropShadow.ZIndex = 0
+DropShadow.Image = "rbxassetid://6015897843"
+DropShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+DropShadow.ImageTransparency = 0.500
+DropShadow.ScaleType = Enum.ScaleType.Slice
+DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
+
+TopBar.Name = "TopBar"
+TopBar.Parent = Main
+TopBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TopBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TopBar.BorderSizePixel = 0
+TopBar.Size = UDim2.new(1, 0, 0, 30)
+
+UICorner.Parent = TopBar
+
+Frame.Parent = TopBar
+Frame.AnchorPoint = Vector2.new(0, 1)
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 1, 0)
+Frame.Size = UDim2.new(1, 0, 0, 5)
+
+UIToolsGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(29, 29, 29)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(47, 47, 47))}
+UIToolsGradient.Name = "UIToolsGradient"
+UIToolsGradient.Parent = Frame
+
+Title.Name = "Title"
+Title.Parent = TopBar
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(0.5, 0, 1, 0)
+Title.Font = Enum.Font.Unknown
+Title.Text = "UiLib | W.I.P"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 14.000
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding.Parent = Title
+UIPadding.PaddingLeft = UDim.new(0, 8)
+
+Line.Name = "Line"
+Line.Parent = TopBar
+Line.AnchorPoint = Vector2.new(0, 1)
+Line.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Line.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(0, 0, 1, 0)
+Line.Size = UDim2.new(1, 0, 0, 1)
+
+UIToolsGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(29, 29, 29)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(47, 47, 47))}
+UIToolsGradient_2.Name = "UIToolsGradient"
+UIToolsGradient_2.Parent = TopBar
+
+ExtBtn.Name = "ExtBtn"
+ExtBtn.Parent = TopBar
+ExtBtn.AnchorPoint = Vector2.new(1, 0.5)
+ExtBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExtBtn.BackgroundTransparency = 1.000
+ExtBtn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ExtBtn.BorderSizePixel = 0
+ExtBtn.Position = UDim2.new(1, -6, 0.5, 0)
+ExtBtn.Size = UDim2.new(0, 18, 0, 18)
+ExtBtn.Image = "rbxassetid://18118049757"
+
+UICorner_2.Parent = Main
+
+Navigation.Name = "Navigation"
+Navigation.Parent = Main
+Navigation.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Navigation.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Navigation.BorderSizePixel = 0
+Navigation.Position = UDim2.new(0, 0, 0, 30)
+Navigation.Size = UDim2.new(0, 110, 1, -31)
+
+UICorner_3.Parent = Navigation
+
+Hide.Name = "Hide"
+Hide.Parent = Navigation
+Hide.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hide.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Hide.BorderSizePixel = 0
+Hide.Size = UDim2.new(0, 110, 0, 22)
+
+UIToolsGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(29, 29, 29)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(47, 47, 47))}
+UIToolsGradient_3.Name = "UIToolsGradient"
+UIToolsGradient_3.Parent = Hide
+
+Hide2.Name = "Hide2"
+Hide2.Parent = Navigation
+Hide2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hide2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Hide2.BorderSizePixel = 0
+Hide2.Position = UDim2.new(0.0727272704, 0, 0.921933115, 0)
+Hide2.Size = UDim2.new(0, 102, 0, 22)
+
+UIToolsGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(29, 29, 29)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(47, 47, 47))}
+UIToolsGradient_4.Name = "UIToolsGradient"
+UIToolsGradient_4.Parent = Hide2
+
+ButtonHolder.Name = "ButtonHolder"
+ButtonHolder.Parent = Navigation
+ButtonHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ButtonHolder.BackgroundTransparency = 1.000
+ButtonHolder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ButtonHolder.BorderSizePixel = 0
+ButtonHolder.Size = UDim2.new(1, 0, 1, 0)
+
+UIPadding_2.Parent = ButtonHolder
+UIPadding_2.PaddingBottom = UDim.new(0, 8)
+UIPadding_2.PaddingTop = UDim.new(0, 8)
+
+UIListLayout.Parent = ButtonHolder
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 1)
+
+Active.Name = "Active"
+Active.Parent = ButtonHolder
+Active.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Active.BackgroundTransparency = 0.900
+Active.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Active.BorderSizePixel = 0
+Active.Size = UDim2.new(1, 0, 0, 24)
+Active.Font = Enum.Font.Ubuntu
+Active.Text = "Home"
+Active.TextColor3 = Color3.fromRGB(255, 255, 255)
+Active.TextSize = 12.000
+Active.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_3.Parent = Active
+UIPadding_3.PaddingLeft = UDim.new(0, 28)
+
+Icon.Name = "Icon"
+Icon.Parent = Active
+Icon.AnchorPoint = Vector2.new(0, 0.5)
+Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon.BackgroundTransparency = 1.000
+Icon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Icon.Position = UDim2.new(0, -24, 0.5, 0)
+Icon.Size = UDim2.new(0, 20, 0, 20)
+Icon.Image = "rbxassetid://18176481456"
+
+Inactive.Name = "Inactive"
+Inactive.Parent = ButtonHolder
+Inactive.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Inactive.BackgroundTransparency = 1.000
+Inactive.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Inactive.BorderSizePixel = 0
+Inactive.Size = UDim2.new(1, 0, 0, 24)
+Inactive.Font = Enum.Font.Ubuntu
+Inactive.Text = "Graphics"
+Inactive.TextColor3 = Color3.fromRGB(199, 199, 198)
+Inactive.TextSize = 12.000
+Inactive.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_4.Parent = Inactive
+UIPadding_4.PaddingLeft = UDim.new(0, 28)
+
+Icon_2.Name = "Icon"
+Icon_2.Parent = Inactive
+Icon_2.AnchorPoint = Vector2.new(0, 0.5)
+Icon_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_2.BackgroundTransparency = 1.000
+Icon_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Icon_2.Position = UDim2.new(0, -24, 0.5, 0)
+Icon_2.Size = UDim2.new(0, 20, 0, 20)
+Icon_2.Image = "rbxassetid://18176014111"
+
+Line_2.Name = "Line"
+Line_2.Parent = Navigation
+Line_2.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Line_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line_2.BorderSizePixel = 0
+Line_2.Position = UDim2.new(1, 0, 0, 0)
+Line_2.Size = UDim2.new(0, 1, 1, 0)
+
+UIToolsGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(29, 29, 29)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(47, 47, 47))}
+UIToolsGradient_5.Name = "UIToolsGradient"
+UIToolsGradient_5.Parent = Navigation
+
+ContentContainer.Name = "ContentContainer"
+ContentContainer.Parent = Main
+ContentContainer.AnchorPoint = Vector2.new(1, 0)
+ContentContainer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ContentContainer.BackgroundTransparency = 1.000
+ContentContainer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ContentContainer.BorderSizePixel = 0
+ContentContainer.Position = UDim2.new(1, -6, 0, 36)
+ContentContainer.Size = UDim2.new(1, -123, 1, -42)
+
+HomeTab.Name = "HomeTab"
+HomeTab.Parent = ContentContainer
+HomeTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HomeTab.BackgroundTransparency = 1.000
+HomeTab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HomeTab.BorderSizePixel = 0
+HomeTab.Selectable = false
+HomeTab.Size = UDim2.new(1, 0, 1, 0)
+HomeTab.ScrollBarThickness = 0
+
+Button.Name = "Button"
+Button.Parent = HomeTab
+Button.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button.BorderSizePixel = 0
+Button.Size = UDim2.new(1, 0, 0, 30)
+
+UICorner_4.CornerRadius = UDim.new(0, 5)
+UICorner_4.Parent = Button
+
+UIPadding_5.Parent = Button
+UIPadding_5.PaddingBottom = UDim.new(0, 6)
+UIPadding_5.PaddingLeft = UDim.new(0, 6)
+UIPadding_5.PaddingRight = UDim.new(0, 6)
+UIPadding_5.PaddingTop = UDim.new(0, 6)
+
+Title_2.Name = "Title"
+Title_2.Parent = Button
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.BorderSizePixel = 0
+Title_2.Size = UDim2.new(1, -20, 1, 0)
+Title_2.Font = Enum.Font.Ubuntu
+Title_2.Text = "Button"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextSize = 14.000
+Title_2.TextXAlignment = Enum.TextXAlignment.Left
+
+ImageLabel.Parent = Button
+ImageLabel.AnchorPoint = Vector2.new(1, 0)
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(1, 0, 0, 0)
+ImageLabel.Size = UDim2.new(0, 20, 0, 20)
+ImageLabel.Image = "rbxassetid://18176694515"
+
+UIPadding_6.Parent = HomeTab
+UIPadding_6.PaddingBottom = UDim.new(0, 1)
+UIPadding_6.PaddingLeft = UDim.new(0, 1)
+UIPadding_6.PaddingRight = UDim.new(0, 1)
+UIPadding_6.PaddingTop = UDim.new(0, 1)
+
+Label.Name = "Label"
+Label.Parent = HomeTab
+Label.BackgroundColor3 = Color3.fromRGB(42, 44, 103)
+Label.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Label.BorderSizePixel = 0
+Label.Size = UDim2.new(1, 0, 0, 26)
+
+UICorner_5.CornerRadius = UDim.new(0, 5)
+UICorner_5.Parent = Label
+
+UIPadding_7.Parent = Label
+UIPadding_7.PaddingBottom = UDim.new(0, 6)
+UIPadding_7.PaddingLeft = UDim.new(0, 6)
+UIPadding_7.PaddingRight = UDim.new(0, 6)
+UIPadding_7.PaddingTop = UDim.new(0, 6)
+
+Title_3.Name = "Title"
+Title_3.Parent = Label
+Title_3.BackgroundColor3 = Color3.fromRGB(117, 53, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_3.BorderSizePixel = 0
+Title_3.Position = UDim2.new(0.100000001, 0, 0, 0)
+Title_3.Size = UDim2.new(0.800000012, 0, 1, 0)
+Title_3.Font = Enum.Font.Ubuntu
+Title_3.Text = "Info"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextSize = 14.000
+Title_3.TextXAlignment = Enum.TextXAlignment.Left
+
+ImageLabel_2.Parent = Label
+ImageLabel_2.AnchorPoint = Vector2.new(1, 0)
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(0, 20, 0, -3)
+ImageLabel_2.Size = UDim2.new(0, 20, 0, 20)
+ImageLabel_2.Image = "rbxassetid://18176964559"
+
+UIListLayout_2.Parent = HomeTab
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Padding = UDim.new(0, 6)
+
+Slider.Name = "Slider"
+Slider.Parent = HomeTab
+Slider.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Slider.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Slider.BorderSizePixel = 0
+Slider.Size = UDim2.new(1, 0, 0, 38)
+
+UIPadding_8.Parent = Slider
+UIPadding_8.PaddingBottom = UDim.new(0, 6)
+UIPadding_8.PaddingLeft = UDim.new(0, 6)
+UIPadding_8.PaddingRight = UDim.new(0, 6)
+UIPadding_8.PaddingTop = UDim.new(0, 6)
+
+Title_4.Name = "Title"
+Title_4.Parent = Slider
+Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.BackgroundTransparency = 1.000
+Title_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_4.BorderSizePixel = 0
+Title_4.Size = UDim2.new(1, -24, 1, -10)
+Title_4.Font = Enum.Font.Ubuntu
+Title_4.Text = "Slider"
+Title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.TextSize = 14.000
+Title_4.TextXAlignment = Enum.TextXAlignment.Left
+
+value.Name = "value"
+value.Parent = Slider
+value.AnchorPoint = Vector2.new(1, 0)
+value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+value.BackgroundTransparency = 1.000
+value.BorderColor3 = Color3.fromRGB(0, 0, 0)
+value.BorderSizePixel = 0
+value.Position = UDim2.new(1, 0, 0, 0)
+value.Size = UDim2.new(0, 24, 1, -10)
+value.Font = Enum.Font.Ubuntu
+value.Text = "100"
+value.TextColor3 = Color3.fromRGB(255, 255, 255)
+value.TextSize = 14.000
+value.TextXAlignment = Enum.TextXAlignment.Right
+
+SliderBack.Name = "SliderBack"
+SliderBack.Parent = Slider
+SliderBack.AnchorPoint = Vector2.new(0, 1)
+SliderBack.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+SliderBack.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SliderBack.BorderSizePixel = 0
+SliderBack.Position = UDim2.new(0, 0, 1, 0)
+SliderBack.Size = UDim2.new(1, 0, 0, 4)
+
+Draggable.Name = "Draggable"
+Draggable.Parent = SliderBack
+Draggable.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Draggable.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Draggable.BorderSizePixel = 0
+Draggable.Size = UDim2.new(0.5, 0, 1, 0)
+
+UICorner_6.CornerRadius = UDim.new(0, 5)
+UICorner_6.Parent = Draggable
+
+UICorner_7.CornerRadius = UDim.new(0, 5)
+UICorner_7.Parent = Slider
+
+Dropdown.Name = "Dropdown"
+Dropdown.Parent = HomeTab
+Dropdown.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Dropdown.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Dropdown.BorderSizePixel = 0
+Dropdown.Size = UDim2.new(1, 0, 0, 30)
+
+UICorner_8.CornerRadius = UDim.new(0, 5)
+UICorner_8.Parent = Dropdown
+
+UIPadding_9.Parent = Dropdown
+UIPadding_9.PaddingBottom = UDim.new(0, 6)
+UIPadding_9.PaddingLeft = UDim.new(0, 6)
+UIPadding_9.PaddingRight = UDim.new(0, 6)
+UIPadding_9.PaddingTop = UDim.new(0, 6)
+
+Title_5.Name = "Title"
+Title_5.Parent = Dropdown
+Title_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_5.BackgroundTransparency = 1.000
+Title_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_5.BorderSizePixel = 0
+Title_5.Size = UDim2.new(1, -20, 1, 0)
+Title_5.Font = Enum.Font.Ubuntu
+Title_5.Text = "Dropdown"
+Title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_5.TextSize = 14.000
+Title_5.TextXAlignment = Enum.TextXAlignment.Left
+
+ImageLabel_3.Parent = Dropdown
+ImageLabel_3.AnchorPoint = Vector2.new(1, 0)
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_3.BorderSizePixel = 0
+ImageLabel_3.Position = UDim2.new(1, 0, 0, 0)
+ImageLabel_3.Size = UDim2.new(0, 20, 0, 20)
+ImageLabel_3.Image = "rbxassetid://18189297293"
+
+UIToolsGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(29, 29, 29)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(47, 47, 47))}
+UIToolsGradient_6.Name = "UIToolsGradient"
+UIToolsGradient_6.Parent = Main
+
+-- Scripts:
+
+local function KZBFDWI_fake_script() -- Main.DragScript 
+	local script = Instance.new('LocalScript', Main)
+
+	
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(KZBFDWI_fake_script)()
